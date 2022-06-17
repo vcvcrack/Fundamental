@@ -79,7 +79,7 @@ struct SEQ3 : Module {
 		paramQuantities[TRIG_PARAM]->snapEnabled = true;
 		for (int j = 0; j < 3; j++) {
 			for (int i = 0; i < 8; i++) {
-				configParam(CV_PARAMS + 8 * j + i, -10.f, 10.f, 0.f, string::f("CV %d step %d", j + 1, i + 1), " V");
+				configParam(CV_PARAMS + 8 * j + i, 0.f, 10.f, 0.f, string::f("CV %d step %d", j + 1, i + 1), " V");
 			}
 		}
 		for (int i = 0; i < 8; i++) {
